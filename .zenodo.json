@@ -1,0 +1,40 @@
+{
+  "title": "Electronic notebook: Rigorous Thermodynamic Decomposition of Urea's Effects on the Solubility of Polyethylene Glycol",
+  "description": "This repository contains electronic notebooks (Jupyter) for reproducing the simulation results in the work titled above",
+  "creators": [
+    {
+      "name": "Stefan Hervø-Hansen",
+      "affiliation": "Division of Chemical Engineering, Graduate School of Engineering Science, Osaka University, Japan",
+      "orcid": "0000-0002-9629-9195"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Nobuyuki Matubayasi",
+      "orcid": "0000-0001-7176-441X",
+      "type": "Researcher",
+      "affiliation": "Division of Chemical Engineering, Graduate School of Engineering Science, Osaka University, Japan"
+    }
+  ],
+  "keywords": [
+    "reproducible science",
+    "electronic notebooks",
+    "chemistry",
+    "molecular dynamics",
+    "solvation",
+    "free energy calculations",
+    "energy representation theory"
+  ],
+  "related_identifiers": [
+    {
+      "scheme": "url",
+      "identifier": "https://github.com/SHervoe-Hansen/PEO_solubility_in_urea", 
+      "relation": "isSupplementTo"
+    }
+  ],
+  "license": {
+    "id": "cc-by-4.0"
+  },
+  "access_right": "open",
+  "upload_type": "software"
+}
