@@ -1,0 +1,117 @@
+<ForceField>
+  <Info>
+    <DateGenerated>2022-06-15</DateGenerated>
+    <Reference>Lee, H., Venable, R. M., MacKerell Jr, A. D., Pastor, R. W. (2008) Molecular Dynamics Studies of Polyethylene Oxide and Polyethylene Glycol: Hydrodynamic Radius and Shape Anisotropy. Biophys. J., 95, 1590-1599.</Reference>
+  </Info>
+  <AtomTypes>
+    <Type element="C" name="peg-CE" class="CE" mass="12.01"/>   <!--ether CH2 carbon-->
+    <Type element="C" name="peg-CF" class="CF" mass="12.01"/>   <!--ether CH3 carbon-->
+    <Type element="H" name="peg-HE" class="HE" mass="1.008"/>   <!--ether CH2 hydrogen-->
+    <Type element="H" name="peg-HF" class="HF" mass="1.008"/>   <!--ether CH3 hydrogen-->
+    <Type element="O" name="peg-OE" class="OE" mass="15.9994"/> <!--ether oxygen-->
+  </AtomTypes>
+  <Residues>
+    <Residue name="PGH"> <!--PEG terminal group with external bond on C3-->
+      <Atom name="C1" type="peg-CF" charge="-0.10"/> <!--qsum: -0.10-->
+      <Atom name="H11" type="peg-HF" charge="0.09"/> <!--qsum: -0.01-->
+      <Atom name="H12" type="peg-HF" charge="0.09"/> <!--qsum:  0.08-->
+      <Atom name="H13" type="peg-HF" charge="0.09"/> <!--qsum:  0.17-->
+      <Atom name="O2" type="peg-OE" charge="-0.34"/> <!--qsum: -0.17-->
+      <Atom name="C3" type="peg-CE" charge="-0.01"/> <!--qsum: -0.18-->
+      <Atom name="H31" type="peg-HE" charge="0.09"/> <!--qsum: -0.09-->
+      <Atom name="H32" type="peg-HE" charge="0.09"/> <!--qsum:  0.00-->
+      <Bond atomName1="C1" atomName2="H11"/>
+      <Bond atomName1="C1" atomName2="H12"/>
+      <Bond atomName1="C1" atomName2="H13"/>
+      <Bond atomName1="C1" atomName2="O2"/>
+      <Bond atomName1="O2" atomName2="C3"/>
+      <Bond atomName1="C3" atomName2="H31"/>
+      <Bond atomName1="C3" atomName2="H32"/>
+      <ExternalBond atomName="C3"/>
+    </Residue>
+    <Residue name="PGM"> <!--PEG middle unit-->
+      <Atom name="C1" type="peg-CE" charge="-0.01"/> <!--qsum: -0.01-->
+      <Atom name="H11" type="peg-HE" charge="0.09"/> <!--qsum:  0.08-->
+      <Atom name="H12" type="peg-HE" charge="0.09"/> <!--qsum:  0.17-->
+      <Atom name="O2" type="peg-OE" charge="-0.34"/> <!--qsum: -0.17-->
+      <Atom name="C3" type="peg-CE" charge="-0.01"/> <!--qsum: -0.18-->
+      <Atom name="H31" type="peg-HE" charge="0.09"/> <!--qsum: -0.09-->
+      <Atom name="H32" type="peg-HE" charge="0.09"/> <!--qsum:  0.00-->
+      <Bond atomName1="C1" atomName2="H11"/>
+      <Bond atomName1="C1" atomName2="H12"/>
+      <Bond atomName1="C1" atomName2="O2"/>
+      <Bond atomName1="O2" atomName2="C3"/>
+      <Bond atomName1="C3" atomName2="H31"/>
+      <Bond atomName1="C3" atomName2="H32"/>
+      <ExternalBond atomName="C1"/>
+      <ExternalBond atomName="C3"/>
+    </Residue>
+    <Residue name="PGT"> <!--PEG terminal group with external bond on C1-->
+      <Atom name="C1" type="peg-CE" charge="-0.01"/> <!--qsum: -0.01-->
+      <Atom name="H11" type="peg-HE" charge="0.09"/> <!--qsum:  0.08-->
+      <Atom name="H12" type="peg-HE" charge="0.09"/> <!--qsum:  0.17-->
+      <Atom name="O2" type="peg-OE" charge="-0.34"/> <!--qsum: -0.17-->
+      <Atom name="C3" type="peg-CF" charge="-0.10"/> <!--qsum: -0.27-->
+      <Atom name="H31" type="peg-HF" charge="0.09"/> <!--qsum: -0.18-->
+      <Atom name="H32" type="peg-HF" charge="0.09"/> <!--qsum: -0.09-->
+      <Atom name="H33" type="peg-HF" charge="0.09"/> <!--qsum:  0.00-->
+      <Bond atomName1="C1" atomName2="H11"/>
+      <Bond atomName1="C1" atomName2="H12"/>
+      <Bond atomName1="C1" atomName2="O2"/>
+      <Bond atomName1="O2" atomName2="C3"/>
+      <Bond atomName1="C3" atomName2="H31"/>
+      <Bond atomName1="C3" atomName2="H32"/>
+      <Bond atomName1="C3" atomName2="H33"/>
+      <ExternalBond atomName="C1"/>
+    </Residue>
+  </Residues>
+  <HarmonicBondForce>
+    <Bond type1="peg-CE" type2="peg-CE" length="0.15300" k="259408.0"/>
+    <Bond type1="peg-CE" type2="peg-CF" length="0.15280" k="259408.0"/>
+    <Bond type1="peg-CE" type2="peg-HE" length="0.11110" k="284512.0"/>
+    <Bond type1="peg-CF" type2="peg-HF" length="0.11110" k="284512.0"/>
+    <Bond type1="peg-CE" type2="peg-OE" length="0.14150" k="267776.0"/>
+    <Bond type1="peg-CF" type2="peg-OE" length="0.14150" k="267776.0"/>
+  </HarmonicBondForce>
+  <HarmonicAngleForce>
+    <Angle type1="peg-CE" type2="peg-CE" type3="peg-HE" angle="1.9216075" k="418.400"/>
+    <Angle type1="peg-CE" type2="peg-CF" type3="peg-HF" angle="1.9216075" k="418.400"/> <!--NOT PRESENT/USED IN PEG MODEL-->
+    <Angle type1="peg-CF" type2="peg-CE" type3="peg-HE" angle="1.9216075" k="418.400"/> <!--NOT PRESENT/USED IN PEG MODEL-->
+    <Angle type1="peg-CE" type2="peg-CE" type3="peg-OE" angle="1.9460421" k="418.400"/>
+    <Angle type1="peg-HE" type2="peg-CE" type3="peg-HE" angle="1.9024100" k="292.880"/>
+    <Angle type1="peg-HF" type2="peg-CF" type3="peg-HF" angle="1.8919369" k="292.880"/>
+    <Angle type1="peg-HE" type2="peg-CE" type3="peg-OE" angle="1.9111355" k="418.400"/>
+    <Angle type1="peg-HF" type2="peg-CF" type3="peg-OE" angle="1.9111355" k="418.400"/>
+    <Angle type1="peg-CE" type2="peg-OE" type3="peg-CE" angle="1.9146262" k="460.240"/>
+    <Angle type1="peg-CE" type2="peg-OE" type3="peg-CF" angle="1.9146262" k="460.240"/>
+    <Angle type1="peg-CF" type2="peg-OE" type3="peg-CF" angle="1.9146262" k="460.240"/> <!--PEG MONOMER MODEL ONLY-->
+  </HarmonicAngleForce>
+  <PeriodicTorsionForce>
+    <Proper type1="peg-HE" type2="peg-CE" type3="peg-CE" type4="peg-HE" periodicity1="3" phase1="0" k1="0.79515"/>
+    <Proper type1="peg-HE" type2="peg-CE" type3="peg-CE" type4="peg-OE" periodicity1="3" phase1="0" k1="0.79515"/>
+    <Proper type1="peg-HE" type2="peg-CE" type3="peg-CF" type4="peg-HF" periodicity1="3" phase1="0" k1="0.66960"/> <!--NOT PRESENT/USED IN PEG MODEL-->
+    <Proper type1="peg-HE" type2="peg-CE" type3="peg-OE" type4="peg-CE" periodicity1="3" phase1="0" k1="1.18854"/>
+    <Proper type1="peg-HE" type2="peg-CE" type3="peg-OE" type4="peg-CF" periodicity1="3" phase1="0" k1="1.18854"/>
+    <Proper type1="peg-HF" type2="peg-CF" type3="peg-OE" type4="peg-CE" periodicity1="3" phase1="0" k1="1.18854"/>
+    <Proper type1="peg-HF" type2="peg-CF" type3="peg-OE" type4="peg-CF" periodicity1="3" phase1="0" k1="1.18854"/> <!--PEG MONOMER MODEL ONLY-->
+    <Proper type1="peg-CE" type2="peg-CE" type3="peg-OE" type4="peg-CF"
+	    periodicity1="1" phase1="0" k1="2.38545"
+	    periodicity2="2" phase2="0" k2="1.21365"
+	    periodicity3="3" phase3="0" k3="1.79955"/>
+    <Proper type1="peg-CE" type2="peg-CE" type3="peg-OE" type4="peg-CE"
+	    periodicity1="1" phase1="0" k1="2.38545"
+	    periodicity2="2" phase2="0" k2="1.21365"
+	    periodicity3="3" phase3="0" k3="1.79955"/>	    
+    <Proper type1="peg-OE" type2="peg-CE" type3="peg-CE" type4="peg-OE"
+	    periodicity1="1" phase1="3.14159" k1="2.46915"
+	    periodicity2="2" phase2="0" k2="4.85460"/>
+  </PeriodicTorsionForce>
+  <NonbondedForce coulomb14scale="0.8333333333333334" lj14scale="0.5">
+    <UseAttributeFromResidue name="charge"/>
+    <Atom type="peg-CE" sigma="3.58141e-01" epsilon="2.34304e-01"/>
+    <Atom type="peg-CF" sigma="3.63486e-01" epsilon="3.26352e-01"/>
+    <Atom type="peg-HE" sigma="2.38761e-01" epsilon="1.46440e-01"/>
+    <Atom type="peg-HF" sigma="2.38761e-01" epsilon="1.00416e-01"/>
+    <Atom type="peg-OE" sigma="2.94000e-01" epsilon="4.18400e-01"/>
+  </NonbondedForce>
+</ForceField>

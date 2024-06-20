@@ -1,0 +1,80 @@
+<ForceField>
+<Info>
+<DateGenerated>2023-10-01</DateGenerated>
+<Reference>S. Weerasinghe, P. E. Smith, A Kirkwood−Buff Derived Force Field for Mixtures of Urea and Water. J. Phys. Chem. B 107, 3891–3898 (2003)</Reference>
+</Info>
+
+<AtomTypes>
+<Type name="KB_4" class="H4" element="H" mass="1.008000" />
+<Type name="KB_3" class="N3" element="N" mass="14.007000" />
+<Type name="KB_2" class="N2" element="N" mass="14.007000" />
+<Type name="KB_1" class="O1" element="O" mass="15.999000" />
+<Type name="KB_7" class="H7" element="H" mass="1.008000" />
+<Type name="KB_0" class="C0" element="C" mass="12.011000" />
+<Type name="KB_6" class="H6" element="H" mass="1.008000" />
+<Type name="KB_5" class="H5" element="H" mass="1.008000" />
+</AtomTypes>
+<Residues>
+<Residue name="URE">
+<Atom name="C00" type="KB_0" />
+<Atom name="O01" type="KB_1" />
+<Atom name="N02" type="KB_2" />
+<Atom name="N03" type="KB_3" />
+<Atom name="H04" type="KB_4" />
+<Atom name="H05" type="KB_5" />
+<Atom name="H06" type="KB_6" />
+<Atom name="H07" type="KB_7" />
+<Bond from="0" to="1"/>
+<Bond from="0" to="2"/>
+<Bond from="0" to="3"/>
+<Bond from="2" to="4"/>
+<Bond from="2" to="5"/>
+<Bond from="3" to="6"/>
+<Bond from="3" to="7"/>
+</Residue>
+</Residues>
+<HarmonicBondForce>
+<Bond class1="O1" class2="C0" length="0.1265" k="476976.000000"/>
+<Bond class1="N2" class2="C0" length="0.1350" k="410032.000000"/>
+<Bond class1="N3" class2="C0" length="0.1350" k="410032.000000"/>
+<Bond class1="H4" class2="N2" length="0.1000" k="363171.200000"/>
+<Bond class1="H5" class2="N2" length="0.1000" k="363171.200000"/>
+<Bond class1="H6" class2="N3" length="0.1000" k="363171.200000"/>
+<Bond class1="H7" class2="N3" length="0.1000" k="363171.200000"/>
+</HarmonicBondForce>
+<HarmonicAngleForce>
+<Angle class1="O1" class2="C0" class3="N2" angle="2.1188" k="730.0"/>
+<Angle class1="O1" class2="C0" class3="N3" angle="2.1188" k="730.0"/>
+<Angle class1="C0" class2="N2" class3="H4" angle="2.0944" k="390.0"/>
+<Angle class1="C0" class2="N2" class3="H5" angle="2.0944" k="390.0"/>
+<Angle class1="C0" class2="N3" class3="H6" angle="2.0944" k="390.0"/>
+<Angle class1="C0" class2="N3" class3="H7" angle="2.0944" k="390.0"/>
+<Angle class1="N2" class2="C0" class3="N3" angle="2.0455" k="670.0"/>
+<Angle class1="H6" class2="N3" class3="H7" angle="2.0944" k="445.0"/>
+<Angle class1="H4" class2="N2" class3="H5" angle="2.0944" k="445.0"/>
+</HarmonicAngleForce>
+<PeriodicTorsionForce>
+<Proper class1="H4" class2="N2" class3="C0" class4="N3" k1="10.250800" periodicity1="2" phase1="3.141592653589793"/>
+<Proper class1="H4" class2="N2" class3="C0" class4="O1" k1="10.250800" periodicity1="2" phase1="3.141592653589793"/>
+<Proper class1="H5" class2="N2" class3="C0" class4="N3" k1="10.250800" periodicity1="2" phase1="3.141592653589793"/>
+<Proper class1="H5" class2="N2" class3="C0" class4="O1" k1="10.250800" periodicity1="2" phase1="3.141592653589793"/>
+<Proper class1="H6" class2="N3" class3="C0" class4="N2" k1="10.250800" periodicity1="2" phase1="3.141592653589793"/>
+<Proper class1="H6" class2="N3" class3="C0" class4="O1" k1="10.250800" periodicity1="2" phase1="3.141592653589793"/>
+<Proper class1="H7" class2="N3" class3="C0" class4="N2" k1="10.250800" periodicity1="2" phase1="3.141592653589793"/>
+<Proper class1="H7" class2="N3" class3="C0" class4="O1" k1="10.250800" periodicity1="2" phase1="3.141592653589793"/>
+<Improper class1="N2" class2="C0" class3="H4" class4="H5" k1="0.000000" k2="10.460000" k3="0.000000" k4="0.000000" periodicity1="1" periodicity2="2" periodicity3="3" periodicity4="4" phase1="0.00" phase2="3.141592653589793" phase3="0.00" phase4="3.141592653589793"/>
+<Improper class1="N3" class2="C0" class3="H6" class4="H7" k1="0.000000" k2="10.460000" k3="0.000000" k4="0.000000" periodicity1="1" periodicity2="2" periodicity3="3" periodicity4="4" phase1="0.00" phase2="3.141592653589793" phase3="0.00" phase4="3.141592653589793"/>
+<Improper class1="C0" class2="O1" class3="N2" class4="N3" k1="0.000000" k2="43.932000" k3="0.000000" k4="0.000000" periodicity1="1" periodicity2="2" periodicity3="3" periodicity4="4" phase1="0.00" phase2="3.141592653589793" phase3="0.00" phase4="3.141592653589793"/>
+</PeriodicTorsionForce>
+<NonbondedForce coulomb14scale="0.8333333333333334" lj14scale="0.5">
+<Atom type="KB_6" charge="0.285"  sigma="0.158" epsilon="0.088" />
+<Atom type="KB_3" charge="-0.693" sigma="0.311" epsilon="0.500" />
+<Atom type="KB_4" charge="0.285"  sigma="0.158" epsilon="0.088" />
+<Atom type="KB_0" charge="0.921"  sigma="0.377" epsilon="0.417" />
+<Atom type="KB_1" charge="-0.675" sigma="0.310" epsilon="0.560" />
+<Atom type="KB_2" charge="-0.693" sigma="0.311" epsilon="0.500" />
+<Atom type="KB_7" charge="0.285"  sigma="0.158" epsilon="0.088" />
+<Atom type="KB_5" charge="0.285"  sigma="0.158" epsilon="0.088" />
+</NonbondedForce>
+</ForceField>
+
