@@ -9,8 +9,7 @@ This is supporting information for the scientific manuscript by _Hervø-Hansen e
 - `Simulations` Directory containing raw ermod results and processed results. The directory is also used for location of trajectories and corresponding analysis upon reproduction.
 - `Force_fields` Directory containing force parameters files (in OpenMM format) for the various chemical species utilized.
 - `Figures` Directory containing publication ready figures and images imported in the Juypter notebooks.
-- `ERmod_modifications` Directory containing files for modding of the ERmod program to conduct residue-by-residue decomposition of the solute.
-- `Auxiliary` Directory containing auxiliary python scripts for analysis of data.
+- `Data` Directory containing pre-processed data.
 - `Simulations.ipynb` Jupyter notebook for running molecular dynamics simulations using OpenMM.
 - `Analysis.ipynb` Jupyter notebook for analysis of simulations and free energy computations and production of publication ready figures.
 - `ERmod.ipynb` Jupyter notebook for running free energy calculations using energy-representation theory.
