@@ -1,6 +1,6 @@
 [![CC BY 4.0][cc-by-shield]][cc-by]
 
-# Electronic Notebook: Rigorous Thermodynamic Decomposition of Urea's Effects on the Solubility of Polyethylene Glycol 
+# Electronic Notebook: Thermodynamics of Urea's Effects on the Solubility of Polyethylene Glycol 
 
 This is supporting information for the scientific manuscript by _Hervø-Hansen et al._ (_Journal_, 2024, doi: [xx.xxxxxx/xxxxxxxxxx](https://hervoe.dk)) on the solvation free energy of PEG in urea solutions using the energy-representation theory of solvation in combination with all-atom simulations. All figures within the analysis are publication ready and can be reproduced by running the provided Jupyter notebooks (`.ipynb`). 
 

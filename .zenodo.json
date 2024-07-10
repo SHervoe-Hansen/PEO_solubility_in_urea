@@ -1,5 +1,5 @@
 {
-  "title": "Electronic notebook: Rigorous Thermodynamic Decomposition of Urea's Effects on the Solubility of Polyethylene Glycol",
+  "title": "Electronic notebook: Thermodynamics of Urea's Effects on the Solubility of Polyethylene Glycol",
   "description": "This repository contains electronic notebooks (Jupyter) for reproducing the simulation results in the work titled above",
   "creators": [
     {
@@ -9,6 +9,18 @@
     }
   ],
   "contributors": [
+    {
+      "name": "Kazuya Okita",
+      "orcid": "0000-0002-3029-2679",
+      "type": "Researcher",
+      "affiliation": "Division of Chemical Engineering, Graduate School of Engineering Science, Osaka University, Japan"
+    },
+    {
+      "name": "Kento Kasahara",
+      "orcid": "0000-0001-7138-250X",
+      "type": "Researcher",
+      "affiliation": "Division of Chemical Engineering, Graduate School of Engineering Science, Osaka University, Japan"
+    },
     {
       "name": "Nobuyuki Matubayasi",
       "orcid": "0000-0001-7176-441X",
