@@ -1,24 +1,18 @@
 \usepackage{amsmath}
 
 \usepackage[usenames, dvipsnames]{color}
-\definecolor{cyan}{RGB}{1, 255, 244}
-\definecolor{pink}{RGB}{254, 83, 187}
-\definecolor{yellow}{RGB}{255, 242, 5}
+\definecolor{orange}{RGB}{230, 159, 0}
+\definecolor{cyan}{RGB}{86, 180, 233}
+\definecolor{green}{RGB}{0, 158, 115}
 
 \documentclass{article}
 \usepackage[utf8]{inputenc}
+
+% https://viereck.ch/latex-to-svg/
 \begin{document}
 
 \begin{equation}
-    \textcolor{pink}{\int P_B(\psi) \Delta\nu^{\mathrm{solv}}(\psi) \mathrm{d}\psi} \textcolor{yellow}{\le \Delta \mu^{\mathrm{ex}} \le} \textcolor{cyan}{\int P_A(\psi)\Delta \nu^{\mathrm{solv}}(\psi) \mathrm{d}\psi}
-\end{equation}
-
-\begin{equation}
-    \textcolor{cyan}{\sum_{\psi\in A} \frac{1}{1+\exp\left({\beta[\Delta\nu^{\text{solv}}(\psi)-\textcolor{yellow}{\Delta\mu^{\text{ex}}}]}\right)}} \textcolor{yellow}{=} \textcolor{pink}{\sum_{\psi\in B} \frac{1}{1+\exp\left({\beta[-\Delta\nu^{\text{solv}}(\psi)+\textcolor{yellow}{\Delta\mu^{\text{ex}}}]}\right)}}
-\end{equation}
-
-\begin{equation}
-    \textcolor{cyan}{\sum_{\psi\in A} \mathcal{F}\left( \Delta \mu^{\text{solv}}(\psi)-\textcolor{yellow}{\Delta\mu^{\text{ex}}} \right)} \textcolor{yellow}{=} \textcolor{pink}{\sum_{\psi\in B} \mathcal{F}\left( -\Delta \mu^{\text{solv}}(\psi)+\textcolor{yellow}{\Delta\mu^{\text{ex}}} \right)}
+\textcolor{orange}{\sum_{\psi\in A} \mathcal{F}\left( \Delta \nu^{\text{solv}}(\psi)-\textcolor{green}{\Delta\mu^{\text{ex}}} \right)} \textcolor{green}{=} \textcolor{cyan}{\sum_{\psi\in B} \mathcal{F}\left( -\Delta \nu^{\text{solv}}(\psi)+\textcolor{green}{\Delta\mu^{\text{ex}}} \right)}
 \end{equation}
 
 \end{document}
