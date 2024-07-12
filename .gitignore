@@ -7,7 +7,6 @@ engref.*
 progress.tt
 engsln.*
 *.err
-packmol.in
 submit.pbs
 submit_ermod.pbs
 openMM.py

@@ -1,0 +1,22 @@
+
+tolerance 2.0
+filetype pdb
+output PEG_36_NaCl_0.00.pdb
+
+add_box_sides 1.0
+
+structure /data/group1/z44785r/PEO-Solubility/PDB_files/PEO-36-mer.pdb
+        number 1
+        fixed 35. 35. 35. 0. 0. 0.
+        centerofmass
+end structure
+
+#structure /data/group1/z44785r/PEO-Solubility/PDB_files/Cl.pdb
+#        number 0
+#        inside cube 0. 0. 0. 70.
+#end structure
+
+#structure /data/group1/z44785r/PEO-Solubility/PDB_files/Na.pdb
+#        number 0
+#        inside cube 0. 0. 0. 70.
+#end structure

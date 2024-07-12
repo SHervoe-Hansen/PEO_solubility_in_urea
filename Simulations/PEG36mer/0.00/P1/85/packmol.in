@@ -1,0 +1,18 @@
+
+tolerance 2.0
+filetype pdb
+output PEG_36_urea.pdb
+add_amber_ter
+
+add_box_sides 0.1
+
+structure conf.pdb
+        number 1
+        fixed 35. 35. 35. 0. 0. 0.
+        centerofmass
+end structure
+
+structure /data/group1/z44785r/PEO_TMP/PDB_files/urea.pdb
+        number 378
+        inside cube 0. 0. 0. 70.
+end structure

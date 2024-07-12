@@ -1,0 +1,11 @@
+
+tolerance 2.0
+filetype pdb
+output urea_8.00.pdb
+
+add_box_sides 1.0
+
+structure /data/group1/z44785r/PEO_TMP/PDB_files/urea.pdb
+        number 1472
+        inside cube 0. 0. 0. 70.
+end structure
