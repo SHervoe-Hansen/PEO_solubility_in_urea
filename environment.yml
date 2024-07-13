@@ -1,0 +1,14 @@
+name: PEG
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - openmm=8.1
+  - parmed=3.4
+  - mdtraj=1.9
+  - numpy=1.23
+  - scipy=1.10
+  - packmol=20.14
+  - notebook=6.5
+  - matplotlib=3.6
