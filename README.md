@@ -1,4 +1,4 @@
-[![CC BY 4.0][cc-by-shield]][cc-by]
+[![CC BY 4.0][cc-by-shield]][cc-by][![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12603786.svg)](https://doi.org/10.5281/zenodo.12603786)
 
 # Electronic Notebook: Thermodynamics of Urea's Effects on the Solubility of Polyethylene Glycol 
 
