@@ -42,6 +42,11 @@
       "scheme": "url",
       "identifier": "https://github.com/SHervoe-Hansen/PEO_solubility_in_urea", 
       "relation": "isSupplementTo"
+    },
+    {
+      "scheme": "doi",
+      "identifier": "10.1021/acs.jctc.4c01000",
+      "relation": "isSupplementTo"
     }
   ],
   "license": {
