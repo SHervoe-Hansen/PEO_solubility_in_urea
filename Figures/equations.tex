@@ -1,18 +1,47 @@
-\usepackage{amsmath}
+%\usepackage{amsmath}
+%
+%\usepackage[usenames, dvipsnames]{color}
+%\definecolor{orange}{RGB}{230, 159, 0}
+%\definecolor{cyan}{RGB}{86, 180, 233}
+%\definecolor{green}{RGB}{0, 158, 115}
+%
+%\documentclass{article}
+%\usepackage[utf8]{inputenc}
+%
+%% https://viereck.ch/latex-to-svg/
+%\begin{document}
+%
+%\begin{equation}
+%\boldsymbol{\textcolor{orange}{\sum_{\psi\in A} {F}\left( \Delta \nu^{\text{solv}}(\psi)-\textcolor{green}{\Delta\mu^{\text{ex}}} \right)} \textcolor{green}{=} \textcolor{cyan}{\sum_{\psi\in B} {F}\left( -\Delta \nu^{\text{solv}}(\psi)+\textcolor{green}{\Delta\mu^{\text{ex}}}\right)}}
+%\end{equation}
+%
+%\end{document}
 
-\usepackage[usenames, dvipsnames]{color}
+
+\documentclass[a4paper,landscape]{article} 
+\usepackage{graphicx,xcolor}
+
 \definecolor{orange}{RGB}{230, 159, 0}
 \definecolor{cyan}{RGB}{86, 180, 233}
 \definecolor{green}{RGB}{0, 158, 115}
 
-\documentclass{article}
-\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\def\PoorManContour#1#2#3{\leavevmode
+    \setbox0=\hbox{{#1}}%
+    \color{#3}\kern-.002em\copy0\kern-\wd0
+    \color{#3}\raise-.04em\copy0\kern-\wd0
+    \color{#3}\lower.04em\copy0\kern-\wd0
+    \color{#3}\raise0.04em\copy0\kern-\wd0
+    \color{#2}\raise-.012em\copy0\kern-\wd0
+    \color{#2}\kern.06em\copy0\kern-\wd0
+    \color{orange}\kern-.020em\lower.003em\box0
+}
 
-% https://viereck.ch/latex-to-svg/
 \begin{document}
-
-\begin{equation}
-\boldsymbol{\textcolor{orange}{\sum_{\psi\in A} {F}\left( \Delta \nu^{\text{solv}}(\psi)-\textcolor{green}{\Delta\mu^{\text{ex}}} \right)} \textcolor{green}{=} \textcolor{cyan}{\sum_{\psi\in B} {F}\left( -\Delta \nu^{\text{solv}}(\psi)+\textcolor{green}{\Delta\mu^{\text{ex}}}\right)}}
-\end{equation}
+\pagenumbering{gobble}
+\noindent % Remove indentation
+\hspace*{-\oddsidemargin} % Shift left beyond the margin
+\hspace*{-1in} % Align to the absolute left of the page
+\colorbox{gray!5}{\scalebox{3.0}{\PoorManContour{$\boldsymbol{{\sum\limits_{\psi\in A} {F}\left( \Delta \nu^{\text{solv}}(\psi)-{\Delta\mu^{\text{ex}}} \right)} {=} {\sum\limits_{\psi\in B} {F}\left( -\Delta \nu^{\text{solv}}(\psi)+{\Delta\mu^{\text{ex}}}\right)}}$}{gray!60}{gray!60}}}
 
 \end{document}
